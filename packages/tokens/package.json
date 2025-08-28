@@ -1,0 +1,33 @@
+{
+  "name": "@proot/tokens",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "pnpm run --sequential \"/^build:.*/\"",
+    "build:clean": "rimraf dist",
+    "build:tsc": "tsc --project tsconfig.build.json",
+    "build:tsc-alias": "tsc-alias -p tsconfig.build.json",
+    "tsc": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "exports": {
+    "tokens.stylex": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/tokens.stylex.js"
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "peerDependencies": {
+    "@stylexjs/postcss-plugin": "^0.15.3",
+    "@stylexjs/stylex": "^0.15.3"
+  },
+  "devDependencies": {
+    "rimraf": "^6.0.1",
+    "tsc-alias": "^1.8.16",
+    "typescript": "^5.9.2"
+  },
+  "packageManager": "pnpm@9.15.5+sha512.845196026aab1cc3f098a0474b64dfbab2afe7a1b4e91dd86895d8e4aa32a7a6d03049e2d0ad770bbe4de023a7122fb68c1a1d6e0d033c7076085f9d5d4800d4"
+}

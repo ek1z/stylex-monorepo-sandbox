@@ -1,0 +1,32 @@
+{
+  "name": "@proot/pauks-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "NODE_ENV=dev astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@astrojs/react": "^4.3.0",
+    "@proot/components": "workspace:^",
+    "@proot/pauks-app": "workspace:^",
+    "@proot/tokens": "workspace:^",
+    "@stylexjs/babel-plugin": "^0.15.3",
+    "@stylexjs/open-props": "^0.11.1",
+    "@stylexjs/postcss-plugin": "^0.15.3",
+    "@stylexjs/stylex": "^0.15.3",
+    "@types/react": "^18.3.20",
+    "@types/react-dom": "^18.3.6",
+    "astro": "^5.13.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "typescript": "^5.9.2"
+  },
+  "packageManager": "pnpm@9.15.5+sha512.845196026aab1cc3f098a0474b64dfbab2afe7a1b4e91dd86895d8e4aa32a7a6d03049e2d0ad770bbe4de023a7122fb68c1a1d6e0d033c7076085f9d5d4800d4"
+}
