@@ -1,4 +1,5 @@
 import {Button} from '@proot/components'
+import {tokens} from '@proot/tokens/tokens.stylex'
 
 import * as stylex from '@stylexjs/stylex'
 
@@ -10,6 +11,7 @@ const styles = stylex.create({
   },
   button: {
     width: '126px',
+    color: tokens.textColor
   }
 })
 
@@ -19,8 +21,11 @@ const LandingPage = () => {
       <button {...stylex.props(styles.button)}>
         PAUKS!
       </button>
-      <Button>
+      <Button style={styles.button}>
         Woot!?
+      </Button>
+      <Button>
+        Woot in pink!?
       </Button>
     </main>
   )

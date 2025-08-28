@@ -25,7 +25,9 @@ export default {
             {
               dev: process.env.NODE_ENV !== 'production',
               runtimeInjection: process.env.NODE_ENV !== 'production',
-              aliases: {},
+              aliases: {
+                '@proot/tokens/tokens.stylex': resolve(__dirname, '../../packages/tokens/dist/tokens.stylex.js')
+              },
               unstable_moduleResolution: {
                 type: 'commonJS',
               }

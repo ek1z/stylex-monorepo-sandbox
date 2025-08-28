@@ -11,7 +11,6 @@ export default defineConfig({
   vite: {
     optimizeDeps: {
       exclude: ['@proot/components', '@proot/tokens'],
-
     },
     ssr: {
       optimizeDeps: {
@@ -36,7 +35,9 @@ export default defineConfig({
               dev: process.env.NODE_ENV !== 'production',
               test: process.env.NODE_ENV === 'test',
               runtimeInjection: process.env.NODE_ENV !== 'production',
-              aliases: {},
+              aliases: {
+                '@proot/tokens/tokens.stylex': resolve(__dirname, '../../packages/tokens/dist/tokens.stylex.js')
+              },
               unstable_moduleResolution: {
                 type: 'commonJS'
               }
