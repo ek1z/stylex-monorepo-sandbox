@@ -11,6 +11,7 @@ export default {
         'src/**/*.{ts,tsx,astro}',
         '../../packages/components/dist/**/*.{js,jsx}',
         '../../packages/tokens/dist/**/*.{js,jsx}',
+        '../../node_modules/.pnpm/@stylexjs+open-props@0.11.1/node_modules/@stylexjs/open-props/**/*.{js,mjs,jsx}',
       ],
       exclude: ['src/modules/**/build/**/*'],
       useCSSLayers: false,
