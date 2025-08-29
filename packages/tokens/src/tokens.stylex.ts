@@ -1,4 +1,4 @@
-import * as stylex from '@stylexjs/stylex'
+import * as stylex from '@stylexjs/stylex';
 export const tokens = stylex.defineConsts({
-  textColor: 'black'
-})
+  textColor: 'black',
+});

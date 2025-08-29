@@ -1,12 +1,12 @@
+import { dirname, resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
 import react from '@astrojs/react';
 import { defineConfig } from 'astro/config';
-import {dirname, resolve} from "path";
-import {fileURLToPath} from "url";
 
-const __filename = fileURLToPath(import.meta.url)
-const __dirname = dirname(__filename)
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
-const libraries = ['@proot/components', '@proot/tokens']
+const libraries = ['@proot/components', '@proot/tokens'];
 
 // https://astro.build/config
 export default defineConfig({
@@ -18,12 +18,12 @@ export default defineConfig({
       optimizeDeps: {
         exclude: libraries,
       },
-      noExternal: libraries
+      noExternal: libraries,
     },
     css: {
       transformer: 'postcss',
       postcss: resolve(resolve(), 'postcss.config.mjs'),
-    }
+    },
   },
   integrations: [
     react({
@@ -37,15 +37,15 @@ export default defineConfig({
               test: process.env.NODE_ENV === 'test',
               runtimeInjection: process.env.NODE_ENV !== 'production',
               aliases: {
-                '@proot/tokens/tokens.stylex': resolve(__dirname, '../../packages/tokens/dist/tokens.stylex.js')
+                '@proot/tokens/tokens.stylex': resolve(__dirname, '../../packages/tokens/dist/tokens.stylex.js'),
               },
               unstable_moduleResolution: {
-                type: 'commonJS'
-              }
-            }
-          ]
-        ]
-      }
-    })
+                type: 'commonJS',
+              },
+            },
+          ],
+        ],
+      },
+    }),
   ],
 });

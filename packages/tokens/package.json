@@ -10,7 +10,7 @@
     "build:tsc": "tsc --project tsconfig.build.json",
     "build:tsc-alias": "tsc-alias -p tsconfig.build.json",
     "tsc": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 0"
   },
   "exports": {
     "./tokens.stylex": {
@@ -22,8 +22,8 @@
   "author": "",
   "license": "ISC",
   "peerDependencies": {
-    "@stylexjs/postcss-plugin": "^0.15.3",
-    "@stylexjs/stylex": "^0.15.3"
+    "@stylexjs/postcss-plugin": "catalog:",
+    "@stylexjs/stylex": "catalog:"
   },
   "devDependencies": {
     "rimraf": "^6.0.1",

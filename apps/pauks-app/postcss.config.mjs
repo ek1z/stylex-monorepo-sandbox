@@ -1,8 +1,8 @@
-import {dirname, resolve} from 'path'
-import {fileURLToPath} from 'url'
+import { dirname, resolve } from 'path';
+import { fileURLToPath } from 'url';
 
-const __filename = fileURLToPath(import.meta.url)
-const __dirname = dirname(__filename)
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 export default {
   plugins: {
@@ -10,14 +10,14 @@ export default {
       include: [
         'src/**/*.{ts,tsx,astro}',
         '../../packages/components/dist/**/*.{js,jsx}',
-        '../../packages/tokens/dist/**/*.{js,jsx}'
+        '../../packages/tokens/dist/**/*.{js,jsx}',
       ],
       exclude: ['src/modules/**/build/**/*'],
       useCSSLayers: false,
       babelConfig: {
         babelrc: false,
         parserOpts: {
-          plugins: ['typescript', 'jsx']
+          plugins: ['typescript', 'jsx'],
         },
         plugins: [
           [
@@ -26,15 +26,15 @@ export default {
               dev: process.env.NODE_ENV !== 'production',
               runtimeInjection: process.env.NODE_ENV !== 'production',
               aliases: {
-                '@proot/tokens/tokens.stylex': resolve(__dirname, '../../packages/tokens/dist/tokens.stylex.js')
+                '@proot/tokens/tokens.stylex': resolve(__dirname, '../../packages/tokens/dist/tokens.stylex.js'),
               },
               unstable_moduleResolution: {
                 type: 'commonJS',
-              }
-            }
-          ]
-        ]
-      }
-    }
-  }
-}
+              },
+            },
+          ],
+        ],
+      },
+    },
+  },
+};

@@ -1,7 +1,7 @@
-import {Button} from '@proot/components'
-import {tokens} from '@proot/tokens/tokens.stylex'
+import { Button } from '@proot/components';
+import { tokens } from '@proot/tokens/tokens.stylex';
 
-import * as stylex from '@stylexjs/stylex'
+import * as stylex from '@stylexjs/stylex';
 
 const styles = stylex.create({
   container: {
@@ -11,24 +11,18 @@ const styles = stylex.create({
   },
   button: {
     width: '126px',
-    color: tokens.textColor
-  }
-})
+    color: tokens.textColor,
+  },
+});
 
 const LandingPage = () => {
   return (
     <main {...stylex.props(styles.container)}>
-      <button {...stylex.props(styles.button)}>
-        PAUKS!
-      </button>
-      <Button style={styles.button}>
-        Proots!?
-      </Button>
-      <Button>
-        Proots in pink!?
-      </Button>
+      <button {...stylex.props(styles.button)}>PAUKS!</button>
+      <Button style={styles.button}>Proots!?</Button>
+      <Button>Proots in pink!?</Button>
     </main>
-  )
-}
+  );
+};
 
-export default LandingPage
+export default LandingPage;
