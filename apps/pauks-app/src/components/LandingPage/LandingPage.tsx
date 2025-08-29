@@ -1,5 +1,6 @@
 import { Button } from '@proot/components';
 import { tokens } from '@proot/tokens/tokens.stylex';
+import { colors } from '@stylexjs/open-props/lib/colors.stylex';
 
 import * as stylex from '@stylexjs/stylex';
 
@@ -7,7 +8,7 @@ const styles = stylex.create({
   container: {
     width: '400px',
     height: '500px',
-    backgroundColor: 'turquoise',
+    backgroundColor: colors.blue2,
   },
   button: {
     width: '126px',
