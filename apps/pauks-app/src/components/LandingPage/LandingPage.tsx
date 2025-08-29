@@ -22,10 +22,10 @@ const LandingPage = () => {
         PAUKS!
       </button>
       <Button style={styles.button}>
-        Woot!?
+        Proots!?
       </Button>
       <Button>
-        Woot in pink!?
+        Proots in pink!?
       </Button>
     </main>
   )

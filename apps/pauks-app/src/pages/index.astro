@@ -1,6 +1,8 @@
 ---
 import '../styles.css'
+
 import LandingPage from "../components/LandingPage/LandingPage";
+
 Astro.response.headers.set(
   'cache-control',
   'public, max-age=60, s-maxage=60, stale-while-revalidate=60'
@@ -9,15 +11,14 @@ Astro.response.headers.set('x-content-type-options', 'nosniff')
 Astro.response.headers.set('x-xss-protection', '1; mode=block')
 Astro.response.headers.set('strict-transport-security', 'max-age=15768000; includeSubDomains')
 Astro.response.headers.set('X-UA-Compatible', 'IE=Edge, chrome=1')
-Astro.response.headers.set(
-  'Content-Security-Policy',
-  "frame-ancestors 'self' https://*.ray.fi https://*.veikkaus.fi"
-)
 ---
 
 <html>
-<head></head>
-<body>
-<LandingPage />
-</body>
+  <head>
+      <title>Pauks App</title>
+      <meta charset="utf-8" />
+  </head>
+  <body>
+    <LandingPage />
+  </body>
 </html>

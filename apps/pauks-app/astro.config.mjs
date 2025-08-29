@@ -6,24 +6,25 @@ import {fileURLToPath} from "url";
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
 
+const libraries = ['@proot/components', '@proot/tokens']
+
 // https://astro.build/config
 export default defineConfig({
   vite: {
     optimizeDeps: {
-      exclude: ['@proot/components', '@proot/tokens'],
+      exclude: libraries,
     },
     ssr: {
       optimizeDeps: {
-        exclude: ['@proot/components', '@proot/tokens'],
+        exclude: libraries,
       },
-      noExternal: ['@proot/components', '@proot/tokens']
+      noExternal: libraries
     },
     css: {
       transformer: 'postcss',
       postcss: resolve(resolve(), 'postcss.config.mjs'),
     }
   },
-  // Enable React to support React JSX components.
   integrations: [
     react({
       babel: {
