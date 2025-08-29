@@ -6,4 +6,5 @@ StyleX into our technology stack.
 Problemskis:
 
 - [x] How to omit compilation in `packages` and leave it upp to the consuming end (`apps`)
-- [ ] How to chain up external StyleX packages into the `packages` and `apps`
+- [ ] How to chain up external StyleX packages into the `packages` and `apps`. E.g. how to include the `@stylexjs/open-props` package and use the vars defined in it without making the compilation go BOOM
+- [ ] How to release a StyleX compilation compatible Design System implementation that will expose the raw StyleX for the pleasure of the consuming app
