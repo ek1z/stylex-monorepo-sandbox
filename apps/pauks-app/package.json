@@ -17,15 +17,21 @@
     "@proot/components": "workspace:^",
     "@proot/pauks-app": "workspace:^",
     "@proot/tokens": "workspace:^",
-    "@stylexjs/babel-plugin": "catalog:",
     "@stylexjs/open-props": "catalog:",
-    "@stylexjs/postcss-plugin": "catalog:",
     "@stylexjs/stylex": "catalog:",
-    "@types/react": "^18.3.20",
-    "@types/react-dom": "^18.3.6",
     "astro": "^5.13.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "typescript": "^5.9.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.28.3",
+    "@babel/preset-typescript": "^7.27.1",
+    "@stylexjs/babel-plugin": "catalog:",
+    "@stylexjs/postcss-plugin": "catalog:",
+    "@types/react": "^18.3.20",
+    "@types/react-dom": "^18.3.6",
+    "vite": "^7.1.3",
+    "vite-plugin-babel": "^1.3.2"
   }
 }
