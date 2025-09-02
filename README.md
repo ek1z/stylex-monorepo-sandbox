@@ -11,9 +11,13 @@ Target is to enable multiple apps to utilise multiple packages via configuration
 - `Astro` for meta platform
 - `React` for client side logic
 - `StyleX` for styles
+  - Provide StyleX packages to the apps
+  - Consuming apps should be able to use the StyleX packages and handle the stylex transformations
+  - Consuming apps and the packages should be able to use the StyleX logic from external packages
+- `TypeScript` for type safety
 
 ## Problemskis
 
 - [x] How to omit compilation in `packages` and leave it upp to the consuming end (`apps`)
-- [ ] How to chain up external StyleX packages into the `packages` and `apps`. E.g. how to include the `@stylexjs/open-props` package and use the vars defined in it without making the compilation go BOOM
+- [x] How to chain up external StyleX packages into the `packages` and `apps`. E.g. how to include the `@stylexjs/open-props` package and use the vars defined in it without making the compilation go BOOM
 - [ ] How to release a StyleX compilation compatible Design System implementation that will expose the raw StyleX for the pleasure of the consuming app

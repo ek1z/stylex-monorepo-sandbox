@@ -1,10 +1,15 @@
-import { ReactNode } from 'react';
+import { colors } from '@stylexjs/open-props/lib/colors.stylex';
+import type { StyleXStyles } from '@stylexjs/stylex';
 import * as stylex from '@stylexjs/stylex';
-import { StyleXStyles } from '@stylexjs/stylex/lib/types/StyleXTypes';
+import type { ReactNode } from 'react';
 
 const styles = stylex.create({
   button: {
     color: 'pink',
+    height: '48px',
+    borderColor: colors.camo3,
+    borderWidth: '4px',
+    borderStyle: 'dashed',
   },
 });
 
