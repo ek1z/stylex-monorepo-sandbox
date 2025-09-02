@@ -8,4 +8,5 @@ node_modules/
 /*.log
 
 apps/**/dist/
+apps/**/.next/
 packages/**/dist/

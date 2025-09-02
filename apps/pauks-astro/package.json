@@ -1,5 +1,5 @@
 {
-  "name": "@proot/pauks-app",
+  "name": "@proot/pauks-astro",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -15,7 +15,7 @@
   "dependencies": {
     "@astrojs/react": "^4.3.0",
     "@proot/components": "workspace:^",
-    "@proot/pauks-app": "workspace:^",
+    "@proot/pauks-astro": "workspace:^",
     "@proot/tokens": "workspace:^",
     "@stylexjs/open-props": "catalog:",
     "@stylexjs/stylex": "catalog:",
@@ -25,7 +25,6 @@
     "typescript": "^5.9.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.28.3",
     "@babel/preset-typescript": "^7.27.1",
     "@stylexjs/babel-plugin": "catalog:",
     "@stylexjs/postcss-plugin": "catalog:",
