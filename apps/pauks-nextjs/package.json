@@ -1,0 +1,35 @@
+{
+  "name": "@proot/pauks-nextjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "biome check",
+    "format": "biome format --write"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@proot/components": "workspace:^",
+    "@proot/pauks-astro": "workspace:^",
+    "@proot/tokens": "workspace:^",
+    "@stylexjs/open-props": "catalog:",
+    "@stylexjs/stylex": "catalog:",
+    "next": "^15.5.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "typescript": "^5.9.2"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-decorators": "^7.28.0",
+    "@stylexjs/babel-plugin": "catalog:",
+    "@stylexjs/postcss-plugin": "catalog:",
+    "@types/react": "^18.3.20",
+    "@types/react-dom": "^18.3.6",
+    "babel-loader": "^10.0.0"
+  }
+}

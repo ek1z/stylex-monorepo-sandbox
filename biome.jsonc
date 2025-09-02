@@ -1,6 +1,6 @@
 {
   "files": {
-    "includes": ["**", "!**/dist", "!**/.astro"]
+    "includes": ["**", "!**/dist", "!**/.astro", "!**/.next"]
   },
   "formatter": {
     "indentStyle": "space" // default is `tab`
